@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//AI to cycle through the waypoints in the scene
+//AI to cycle through the waypoints in the scene - attach to character
+//use Unity's waypoint system to give a visualisation of the waypoint path in the scene and add the ability to reorganise waypoints
 
 public class WaypointFollow : MonoBehaviour{
 
@@ -40,7 +41,7 @@ public class WaypointFollow : MonoBehaviour{
       currentWP++;
       
       //cycle around the waypoints
-      if(currentWP >= circuit.Waypoints.Length){
+      if(currentWP >= circuit.Waypoints.Length){a
         currentWP = 0;
       }
     }
